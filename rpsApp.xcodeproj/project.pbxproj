@@ -14,6 +14,7 @@
 		687638A9291E854900D52C39 /* rpsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 687638A7291E854900D52C39 /* rpsApp.xcdatamodeld */; };
 		687638AB291E854B00D52C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687638AA291E854B00D52C39 /* Assets.xcassets */; };
 		687638AE291E854B00D52C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687638AC291E854B00D52C39 /* LaunchScreen.storyboard */; };
+		688C99A429228B0300AACF73 /* PlayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688C99A329228B0300AACF73 /* PlayScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		687638AA291E854B00D52C39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		687638AD291E854B00D52C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		687638AF291E854B00D52C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		688C99A329228B0300AACF73 /* PlayScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				687638A0291E854900D52C39 /* SceneDelegate.swift */,
 				687638A2291E854900D52C39 /* ViewController.swift */,
 				687638A4291E854900D52C39 /* Main.storyboard */,
+				688C99A329228B0300AACF73 /* PlayScreen.swift */,
 				687638AA291E854B00D52C39 /* Assets.xcassets */,
 				687638AC291E854B00D52C39 /* LaunchScreen.storyboard */,
 				687638AF291E854B00D52C39 /* Info.plist */,
@@ -145,6 +148,7 @@
 				687638A9291E854900D52C39 /* rpsApp.xcdatamodeld in Sources */,
 				6876389F291E854900D52C39 /* AppDelegate.swift in Sources */,
 				687638A1291E854900D52C39 /* SceneDelegate.swift in Sources */,
+				688C99A429228B0300AACF73 /* PlayScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
