@@ -32,10 +32,16 @@ class PlayScreen: UIViewController{
             computerChoiceOutlet.image = UIImage(named: "ROCK")
         }
         winCheck(computerChoice)
+        streakLabelOutlet.text = "Streak: \(AppData.streak)"
+        coinsLabelOutlet.text = "Coins: \(AppData.coins)"
     }
     
+    @IBOutlet weak var streakLabelOutlet: UILabel!
     @IBOutlet weak var playerChoiceOutlet: UIImageView!
     @IBOutlet weak var computerChoiceOutlet: UIImageView!
+    
+    @IBOutlet weak var coinsLabelOutlet: UILabel!
+    
     
     @IBOutlet weak var winnerOutlet: UILabel!
     
@@ -48,10 +54,13 @@ class PlayScreen: UIViewController{
             else if AppData.playerChoice == 3{
                 AppData.wins+=1
                 winnerOutlet.text = "You Won!"
+                AppData.streak+=1
+                AppData.coins += Int((pow(Double(AppData.streak),Double(AppData.streak))))
             }
             else if AppData.playerChoice == 2{
                 AppData.losses+=1
                 winnerOutlet.text = "You Lose!"
+                AppData.streak = 0
             }
         }
         if compChoice == 2{
@@ -62,10 +71,13 @@ class PlayScreen: UIViewController{
             else if AppData.playerChoice == 1{
                 AppData.wins+=1
                 winnerOutlet.text = "You Won!"
+                AppData.streak+=1
+                AppData.coins += Int((pow(Double(AppData.streak),Double(AppData.streak))))
             }
             else if AppData.playerChoice == 3{
                 AppData.losses+=1
                 winnerOutlet.text = "You Lose!"
+                AppData.streak = 0
             }
         }
         if compChoice == 3{
@@ -76,12 +88,22 @@ class PlayScreen: UIViewController{
             else if AppData.playerChoice == 2{
                 AppData.wins+=1
                 winnerOutlet.text = "You Won!"
+                AppData.streak+=1
+                AppData.coins += Int((pow(Double(AppData.streak),Double(AppData.streak))))
             }
             else if AppData.playerChoice == 1{
                 AppData.losses+=1
                 winnerOutlet.text = "You Lose!"
+                AppData.streak = 0
             }
         }
 
     }
+    
+    @IBAction func backButton(_ sender: Any) {
+        performSegue(withIdentifier: "unwind", sender: self)
+    }
+    
+    
+    
 }
